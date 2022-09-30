@@ -1,10 +1,14 @@
 """Median calculator."""
 """ENTER YOUR SOLUTION HERE!"""
-
 while True:
     try:
         print("Enter a list of numbers separated by commas: ")
-        numbers = [float(value) for value in input().split(",")]
+        input = input();
+        if input[0] == "[":
+            input = input[1:len(input)]
+        if input[len(input)-1] == "]":
+            input = input[0:len(input)-1]
+        numbers = [float(value) for value in input.split(",")]
     except ValueError:
         print("Some input could not be converted to a number!")
     else:
