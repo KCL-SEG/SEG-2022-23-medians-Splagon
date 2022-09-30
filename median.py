@@ -23,5 +23,4 @@ if (len(numbers) > 0):
         upperOfMedian = numbers[int(midpoint + 0.5)]
         median = (lowerOfMedian + upperOfMedian) / 2
 
-print()
-print("Median = " + str(median))
+print(median)
